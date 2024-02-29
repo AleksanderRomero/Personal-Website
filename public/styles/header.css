@@ -1,0 +1,117 @@
+/* Header Desktop*/
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 22px;
+    position: relative;
+}
+
+nav a {
+    color: var(--cor-1);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: color 250ms ease-in-out, font-size 250ms ease-in-out;
+
+}
+
+nav a:hover {
+    color: var(--cor-2);
+    font-size: 16px;
+
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: var(--cor-3);
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+/* Codigo do botao switch */
+#checkbox {
+    display: none;
+}
+
+.switch {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(99, 99, 99);
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(126, 126, 126);
+    box-shadow: 0px 0px 3px rgb(2, 2, 2) inset;
+    top: 4px;
+}
+
+.switch svg {
+    width: 1.2em;
+}
+
+.switch svg path {
+    fill: rgb(48, 48, 48);
+}
+
+#checkbox:checked+.switch {
+    box-shadow: 0px 0px 1px rgb(151, 243, 255) inset,
+        0px 0px 2px rgb(151, 243, 255) inset, 0px 0px 10px rgb(151, 243, 255) inset,
+        0px 0px 40px rgb(151, 243, 255), 0px 0px 100px rgb(151, 243, 255),
+        0px 0px 5px rgb(151, 243, 255);
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(146, 180, 184);
+}
+
+#checkbox:checked+.switch svg {
+    filter: drop-shadow(0px 0px 5px rgb(151, 243, 255));
+}
+
+#checkbox:checked+.switch svg path {
+    fill: rgb(255, 255, 255);
+}
+
+/* Header Mobile */
+
+
+
+/* Exibe o header de desktop por padrão */
+.menu-desktop {
+    display: block;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+/* Media query para telas mobile, ativa o header mobile */
+@media only screen and (max-width: 768px) {
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+}
