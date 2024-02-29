@@ -44,15 +44,14 @@ function mudarVelocidade() {
     }
 }
 
+
 // CONTROLE DOS TITULOS PESSOAIS
 
-
-
 const textos = [
-    'Desenvolvedor Full Stack',
-    'Navegador de Dados Interplanetário',
-    'Apaixonado por programação',
-    'Jedi',
+    'Desenvolvedor Full Stack.',
+    'Navegador de Dados Interplanetário.',
+    'Apaixonado por programação.',
+    'Jedi. Que a força esteja com você.',
 ];
 const tituloPessoal = document.querySelector('.titulos-pessoais');
 
