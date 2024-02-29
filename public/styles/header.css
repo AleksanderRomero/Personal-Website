@@ -1,18 +1,11 @@
-/* Header Desktop*/
-nav {
-    float: right;
-}
+/* HEADER DESKTOP*/
 
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+header {
+    backdrop-filter: blur(4px);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.225), rgb(0, 0, 0));
 }
 
 nav li {
-    display: inline-block;
-    margin-left: 70px;
-    padding-top: 22px;
     position: relative;
 }
 
@@ -22,20 +15,17 @@ nav a {
     text-transform: uppercase;
     font-size: 14px;
     transition: color 250ms ease-in-out, font-size 250ms ease-in-out;
-
 }
 
 nav a:hover {
-    color: var(--cor-2);
     font-size: 16px;
-
 }
 
 nav a::before {
     content: '';
     display: block;
     height: 5px;
-    background-color: var(--cor-3);
+    background-color: rgb(151, 243, 255);
     position: absolute;
     top: 0;
     width: 0%;
@@ -46,7 +36,7 @@ nav a:hover::before {
     width: 100%;
 }
 
-/* Codigo do botao switch */
+/* CODIGO DO BOTAO SWITCH */
 #checkbox {
     display: none;
 }
@@ -92,8 +82,7 @@ nav a:hover::before {
     fill: rgb(255, 255, 255);
 }
 
-/* Header Mobile */
-
+/* HEADER MOBILE */
 
 
 /* Exibe o header de desktop por padrão */
