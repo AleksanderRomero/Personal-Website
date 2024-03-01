@@ -14,6 +14,10 @@ main {
     color: var(--cor-5);
 }
 
+.section-1 .titulos-pessoais{
+    font-weight: bold;
+}
+
 /* CODIGO DO CARD SOCIAL */
 
 .section-1 .card-social {
