@@ -7,9 +7,8 @@ html {
 }
 
 body {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 800;
-    background-color: transparent;
+    font-family: 'Work Sans', sans-serif !important;
+    background: transparent;
 }
 
 /* CODIGO DO BACKGROUND */

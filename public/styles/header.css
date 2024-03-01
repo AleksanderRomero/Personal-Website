@@ -14,6 +14,7 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
+    font-weight: bold;
     transition: color 250ms ease-in-out, font-size 250ms ease-in-out;
 }
 
@@ -66,21 +67,25 @@ nav a:hover::before {
 }
 
 #checkbox:checked+.switch {
-    box-shadow: 0px 0px 1px rgb(151, 243, 255) inset,
-        0px 0px 2px rgb(151, 243, 255) inset, 0px 0px 10px rgb(151, 243, 255) inset,
-        0px 0px 40px rgb(151, 243, 255), 0px 0px 100px rgb(151, 243, 255),
-        0px 0px 5px rgb(151, 243, 255);
-    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 1px var(--cor-5) inset,
+        0px 0px 2px var(--cor-5) inset, 0px 0px 10px var(--cor-5) inset,
+        0px 0px 40px var(--cor-5), 0px 0px 100px var(--cor-5),
+        0px 0px 5px var(--cor-5);
+    border: 2px solid white;
     background-color: rgb(146, 180, 184);
 }
 
 #checkbox:checked+.switch svg {
-    filter: drop-shadow(0px 0px 5px rgb(151, 243, 255));
+    filter: drop-shadow(0px 0px 5px var(--cor-5));
 }
 
 #checkbox:checked+.switch svg path {
-    fill: rgb(255, 255, 255);
+    fill: white;
 }
+
+
+
+
 
 /* HEADER MOBILE */
 

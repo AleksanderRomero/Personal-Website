@@ -1,8 +1,7 @@
 :root {
-    --cor-1: #ffffff;
-    --cor-2: #b3b3cc;
-    --cor-3: #78b0ff;
-    --cor-4: #000001;
-    /* --cor-5: rgb(6, 251, 255); */
-    --cor-5: rgb(255, 6, 6);
+    --cor-1: #ffffff !important;
+    --cor-2: #c6c6c6 !important;
+    --cor-3: #78b0ff !important;
+    --cor-4: #000001 !important;
+    --cor-5: rgb(6, 251, 255) !important;
 }

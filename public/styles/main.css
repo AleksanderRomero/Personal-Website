@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
 
 main {
-    background-color: transparent;
     color: var(--cor-1);
 }
 
@@ -9,32 +8,20 @@ main {
     margin-top: 200px;
 }
 
-.section-1 .minha-foto {
-    width: 300px;
-    height: 300px;
-    border-radius: 35%;
-}
+/* COR DOS SPANS/TRAÇOS */
 
 .section-1 .span-cor {
     color: var(--cor-5);
 }
 
-.section-1 .barra {
-    color: var(--cor-5);
-}
-
-
 /* CODIGO DO CARD SOCIAL */
 
-.card-social {
-    --font-color: #ffffff;
-    --font-color-sub: #7e7e7e;
-    --main-color: #ffffff;
+.section-1 .card-social {
     width: 200px;
     height: 254px;
     background: #111;
-    border: 1px solid white;
-    box-shadow: 3px 3px var(--cor-5);
+    border: 1px solid var(--cor-1);
+    box-shadow: 20px 20px var(--cor-5);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -45,27 +32,46 @@ main {
     font-style: normal;
 }
 
-.card-photo {
+.section-1 .card-social .card-photo {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin-top: 20px;
+    transition: ease-in-out 0.8s;
+    border: solid 4px var(--cor-5);
 }
 
-.card-title {
+.section-1 .card-social .card-photo:hover {
+    scale: 2.5;
+}
+
+.section-1 .card-social .card-title {
     text-align: center;
-    color: var(--font-color);
+    color: var(--cor-1);
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
+    color: var(--cor-1);
 }
 
-.card-span {
-    font-size: 15px;
-    color: var(--cor-5);
+.section-1 .card-social .titulo-menor {
+    font-size: 10px;
+    color: var(--cor-2);
 }
 
-.card-socials {
+.section-1 .card-social .titulo-menor-licensa {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    font-weight: bold;
+    color: var(--cor-2);
+}
+
+.section-1 .card-social:hover .titulo-menor-licensa {
+    opacity: 0;
+}
+
+.section-1 .card-social .card-socials {
     display: flex;
     height: 0;
     opacity: 0;
@@ -74,27 +80,27 @@ main {
     transition: 0.5s;
 }
 
-.card-socials-btn {
-    width: 25px;
-    height: 25px;
+.section-1 .card-social .card-socials-btn {
+    width: 30px;
+    height: 30px;
     border: none;
     background: transparent;
     cursor: pointer;
 }
 
-.card-socials-btn svg {
+.section-1 .card-social .card-socials-btn svg {
     width: 100%;
     height: 100%;
-    fill: var(--main-color);
+    fill: var(--cor-1);
 }
 
-.card-social:hover>.card-socials {
+.section-1 .card-social:hover>.card-socials {
     opacity: 1;
     height: 35px;
-    margin-bottom: 12px;
+    margin-bottom: 55px;
 }
 
-.card-socials-btn:hover {
+.section-1 .card-social .card-socials-btn:hover {
     transform: translateY(-5px);
-    transition: ease-in-out 0.1s;
+    transition: all ease-in-out 0.2s;
 }

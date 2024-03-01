@@ -60,7 +60,7 @@ let writingText = true; // Variável para indicar se está escrevendo ou apagand
 
 function escreverTexto(texto, index = 0) {
     if (index <= texto.length) {
-        tituloPessoal.innerHTML = texto.substring(0, index) + '<span class="barra">|</span>';
+        tituloPessoal.innerHTML = texto.substring(0, index) + '<span class="span-cor">|</span>';
         setTimeout(() => escreverTexto(texto, index + 1), 100);
     } else {
         writingText = false; // Marca que terminou de escrever o texto
