@@ -36,12 +36,8 @@ main {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    transition: ease-in-out 0.8s;
+    transition: ease-in-out 0.5s;
     border: solid 4px var(--cor-5);
-}
-
-.section-1 .card-social .card-photo:hover {
-    scale: 2.5;
 }
 
 .section-1 .card-social .card-title {
@@ -98,6 +94,7 @@ main {
     opacity: 1;
     height: 35px;
     margin-bottom: 55px;
+    scale: 1.1;
 }
 
 .section-1 .card-social .card-socials-btn:hover {
