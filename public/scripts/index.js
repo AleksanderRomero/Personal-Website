@@ -86,7 +86,7 @@ setInterval(() => {
         if (textoAtual.charAt(textoAtual.length - 1) === '|') {
             tituloPessoal.innerHTML = textoAtual.slice(0, -1);
         } else {
-            tituloPessoal.innerHTML += '<span class="barra">|</span>';
+            tituloPessoal.innerHTML += '<span class="span-cor">|</span>';
         }
     }
 }, 500); // Adiciona e remove a barra intermitentemente

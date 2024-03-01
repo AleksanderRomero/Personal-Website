@@ -65,6 +65,7 @@ main {
     transition: opacity 0.5s ease;
     font-weight: bold;
     color: var(--cor-2);
+    font-size: 14px;
 }
 
 .section-1 .card-social:hover .titulo-menor-licensa {
