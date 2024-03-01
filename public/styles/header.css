@@ -25,7 +25,7 @@ nav a::before {
     content: '';
     display: block;
     height: 5px;
-    background-color: rgb(151, 243, 255);
+    background-color: var(--cor-5);
     position: absolute;
     top: 0;
     width: 0%;

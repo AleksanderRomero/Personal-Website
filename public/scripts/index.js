@@ -8,7 +8,7 @@ video.playbackRate = 0.8; // Velocidade inicial
 function mudarVelocidade() {
     let targetSpeed = checkbox.checked ? 16 : 0.8; // Velocidade desejada
     let currentSpeed = video.playbackRate; // Velocidade atual
-    let increment = 0.8; // Incremento de velocidade
+    let increment = 1; // Incremento de velocidade
 
     // Adiciona ou remove a classe de desfoque dependendo do estado do switch
     if (checkbox.checked) {
@@ -50,8 +50,8 @@ function mudarVelocidade() {
 const textos = [
     'Desenvolvedor Full Stack.',
     'Navegador de Dados Interplanetário.',
-    'Apaixonado por programação.',
-    'Jedi. Que a força esteja com você.',
+    'Apaixonado por inovação.',
+    'Que a força esteja com você.',
 ];
 const tituloPessoal = document.querySelector('.titulos-pessoais');
 
@@ -64,19 +64,19 @@ function escreverTexto(texto, index = 0) {
         setTimeout(() => escreverTexto(texto, index + 1), 100);
     } else {
         writingText = false; // Marca que terminou de escrever o texto
-        setTimeout(apagarTexto, 1000); // Tempo de espera antes de apagar o texto
+        setTimeout(apagarTexto, 2000); // Tempo de espera antes de apagar o texto
     }
 }
 
 function apagarTexto() {
     const textoAtual = tituloPessoal.textContent;
-    if (textoAtual.length > 0) {
+    if (textoAtual.length > 1) {
         tituloPessoal.textContent = textoAtual.slice(0, -1);
         setTimeout(apagarTexto, 50);
     } else {
         writingText = true; // Marca que terminou de apagar o texto e está pronto para escrever novamente
         index = (index + 1) % textos.length; // Avança para o próximo texto na matriz
-        setTimeout(() => escreverTexto(textos[index]), 500); // Tempo de espera antes de começar a escrever o próximo texto
+        setTimeout(() => escreverTexto(textos[index]), 10); // Tempo de espera antes de começar a escrever o próximo texto
     }
 }
 
