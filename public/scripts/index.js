@@ -1,3 +1,23 @@
+document.addEventListener('DOMContentLoaded', function () {
+    if (window.matchMedia("(max-width: 767px)").matches) {
+        Swal.fire({
+            title: 'Olá viajante!',
+            html: 'Por enquanto, a versão mobile está em modo de hibernação. Por favor, retorne à estação Desktop mais próxima.',
+            icon: 'error',
+            showConfirmButton: false,
+            showCloseButton: false,
+            allowOutsideClick: false,
+        });
+    } else {
+        Swal.fire({
+            title: 'Olá viajante!',
+            text: 'Estamos em construção. Por favor, mantenha-se firme enquanto nossos cientistas espaciais realizam ajustes na nave-mãe.',
+            icon: 'warning',
+            confirmButtonText: 'Entendido!'
+        });
+    }
+});
+
 // CONTROLE BACKGROUND ESTRELAS
 
 let interval;
