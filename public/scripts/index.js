@@ -1,3 +1,5 @@
+// ALERTA DE CONSTRUÇÃO
+
 document.addEventListener('DOMContentLoaded', function () {
     if (window.matchMedia("(max-width: 767px)").matches) {
         Swal.fire({
@@ -17,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
 
 // CONTROLE BACKGROUND ESTRELAS
 
@@ -76,14 +79,14 @@ const textos = [
 const tituloPessoal = document.querySelector('.titulos-pessoais');
 
 let index = 0;
-let writingText = true; // Variável para indicar se está escrevendo ou apagando o texto
+let writingText = true;
 
 function escreverTexto(texto, index = 0) {
     if (index <= texto.length) {
         tituloPessoal.innerHTML = texto.substring(0, index) + '<span class="span-cor">|</span>';
         setTimeout(() => escreverTexto(texto, index + 1), 100);
     } else {
-        writingText = false; // Marca que terminou de escrever o texto
+        writingText = false;
         setTimeout(apagarTexto, 2000); // Tempo de espera antes de apagar o texto
     }
 }
@@ -94,8 +97,8 @@ function apagarTexto() {
         tituloPessoal.textContent = textoAtual.slice(0, -1);
         setTimeout(apagarTexto, 50);
     } else {
-        writingText = true; // Marca que terminou de apagar o texto e está pronto para escrever novamente
-        index = (index + 1) % textos.length; // Avança para o próximo texto na matriz
+        writingText = true;
+        index = (index + 1) % textos.length;
         setTimeout(() => escreverTexto(textos[index]), 10); // Tempo de espera antes de começar a escrever o próximo texto
     }
 }
@@ -109,5 +112,13 @@ setInterval(() => {
             tituloPessoal.innerHTML += '<span class="span-cor">|</span>';
         }
     }
-}, 500); // Adiciona e remove a barra intermitentemente
+}, 500);
 escreverTexto(textos[index]);
+
+// CONTROLE DO ALVO DOS LINKS NO MENU
+
+
+
+
+
+

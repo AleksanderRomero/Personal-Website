@@ -32,9 +32,9 @@
             <nav class="mt-4">
                 <ul class="d-flex justify-content-end align-items-center">
                     <li class="mx-4 pt-2"><a href="#">Home</a></li>
-                    <li class="mx-4 pt-2"><a href="#">Sobre</a></li>
-                    <li class="mx-4 pt-2"><a href="#">Projetos</a></li>
-                    <li class="mx-4 pt-2"><a href="#">Contato</a></li>
+                    <li class="mx-4 pt-2"><a href="#sobre">Sobre</a></li>
+                    <li class="mx-4 pt-2"><a href="#projetos">Projetos</a></li>
+                    <li class="mx-4 pt-2"><a href="#contato">Contato</a></li>
                     <li class="mx-5"><input id="checkbox" type="checkbox" onchange="mudarVelocidade()" />
                         <label class="switch" for="checkbox">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="slider">
@@ -63,22 +63,19 @@
 
     <!-- SESSOES HOME, SOBRE, PROJETOS E CONTATO -->
     <main class="container">
-
         <!-- SESSAO HOME -->
-        <div class="section-1">
+        <div class="section section-1" id="home">
             <div class="row">
-
                 <!-- SAUDACOES -->
                 <div class="col-1"></div>
-                <div class="col-7 mt-5">
+                <div class="col-6 mt-5 saudacao-tamanho-fixo">
                     <h4 class="text-start">E aí, tripulante! <span class="span-cor">__</span> <br> Pronto para uma
                         viagem pelo código estelar? </h4>
                     <h1 class="mt-4 titulos-pessoais"></h1>
                     <h6>Amante da tecnologia e do universo.</h6>
                 </div>
-
                 <!-- CARD FOTO DE PERFIL -->
-                <div class="col-4 d-flex justify-content-start">
+                <div class="col-5 d-flex justify-content-center">
                     <div class="card-social">
                         <span class="titulo-menor-licensa">LICENÇA ESPACIAL</span>
                         <img class="card-photo" src="./assets/images/1D96ADBA-7BB9-462A-8ADB-25D9A477CEE4_1_105_c.jpeg"
@@ -87,7 +84,6 @@
                             <span class="titulo-menor">LSE-2024-XY789</span>
                         </div>
                         <div class="card-socials">
-
                             <button class="card-socials-btn github"
                                 onclick="window.open('https://github.com/AleksanderRomero', '_blank')">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24">
@@ -108,11 +104,36 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
 
-
+        <div class="section section-2" id="sobre">
+            <div class="row">
+                <div class="col-5 d-flex align-items-center justify-content-center">
+                    <div class="cube-loader">
+                        <div class="cube-top"></div>
+                        <div class="cube-wrapper">
+                            <span style="--i:0" class="cube-span"></span>
+                            <span style="--i:1" class="cube-span"></span>
+                            <span style="--i:2" class="cube-span"></span>
+                            <span style="--i:3" class="cube-span"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <h5 class="text-start mt-5 span-cor text-bold">SOBRE MIM</h5>
+                    <h2 class="text-bold">Desenvolvedor Full Stack</h2>
+                    <h6 class="text-bold">Base estelar fixa em Belo Horizonte, Minas Gerais 📍</h6>
+                    <p class="text-start mt-5">Olá! Meu nome é Aleksander, estou navegando pelas vastas extensões do
+                        ciberespaço
+                        em busca de novos horizontes e desafios. <br> <br> Neste ponto da minha jornada pelo conhecimento,
+                        encontro-me imerso na constelação da Análise e
+                        Desenvolvimento de Sistemas, uma aventura que atualmente me leva às salas espaciais da PUC
+                        Minas. <br> <br> Junte-se a mim nesta jornada pelo desconhecido, onde a curiosidade é minha bússola e
+                        a inovação é minha estrela guia.
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
 
 
