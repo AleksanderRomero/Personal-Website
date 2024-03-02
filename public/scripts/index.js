@@ -115,7 +115,7 @@ setInterval(() => {
 }, 500);
 escreverTexto(textos[index]);
 
-// CONTROLE DO ALVO DOS LINKS NO MENU
+
 
 
 
