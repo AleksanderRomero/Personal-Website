@@ -8,7 +8,7 @@ main {
     height: 100vh;
 }
 
-.espaco-branco{
+.espaco-branco {
     height: 20%;
 }
 
@@ -277,5 +277,14 @@ main {
     }
 }
 
+/* ####### SECTION-3 ####### */
 
+.imagem-do-projeto {
+    height: 480px;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+}
 
+.imagem-do-projeto:hover {
+    transform: scale(1.1);
+}
