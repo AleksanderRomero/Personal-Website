@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         Swal.fire({
             title: 'Olá viajante!',
-            text: 'Estamos em construção e bugs são esperados. Por favor, mantenha-se firme enquanto nossos cientistas espaciais realizam ajustes na nave-mãe.',
+            text: 'Estamos em fase de construção. Por favor, mantenha-se firme enquanto nossos cientistas espaciais realizam ajustes na nave-mãe.',
             icon: 'warning',
             confirmButtonText: 'Entendido!'
         });
@@ -72,8 +72,8 @@ function mudarVelocidade() {
 
 const textos = [
     'Desenvolvedor Full Stack.',
-    'Navegador de Dados Interplanetário.',
     'Apaixonado por inovação.',
+    'Navegador de Dados Interplanetário.',
     'Que a força esteja com você.',
 ];
 const tituloPessoal = document.querySelector('.titulos-pessoais');

@@ -4,12 +4,8 @@ main {
     color: var(--cor-1);
 }
 
-.section {
+.section-100vh {
     height: 100vh;
-}
-
-.espaco-branco {
-    height: 20%;
 }
 
 .span-cor {
@@ -23,16 +19,12 @@ main {
 
 /* ########## SECTION-1 ########## */
 
-.section-1 {
-    margin-top: 20%;
+.section-1 .row-home {
+    padding-top: 34vh;
 }
 
 .section-1 .titulos-pessoais {
     font-weight: bold;
-}
-
-.section-1 .saudacao-tamanho-fixo {
-    height: 100px;
 }
 
 /* CODIGO DO CARD SOCIAL */
@@ -127,7 +119,7 @@ main {
 /* ########## SECTION-2 ########## */
 
 .section-2 {
-    margin-top: -200px;
+    padding-top: 20vh;
 }
 
 /* ANIMACAO BURACO NEGRO */
@@ -279,12 +271,17 @@ main {
 
 /* ####### SECTION-3 ####### */
 
+.section-3 {
+    padding-top: 22vh;
+}
+
 .imagem-do-projeto {
     height: 480px;
-    border-radius: 15px;
     transition: all 0.5s ease-in-out;
+    border-radius: 38px;
 }
 
 .imagem-do-projeto:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 30px var(--cor-5);
 }
