@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         Swal.fire({
             title: 'Olá viajante!',
-            text: 'Estamos em construção. Por favor, mantenha-se firme enquanto nossos cientistas espaciais realizam ajustes na nave-mãe.',
+            text: 'Estamos em construção e bugs são esperados. Por favor, mantenha-se firme enquanto nossos cientistas espaciais realizam ajustes na nave-mãe.',
             icon: 'warning',
             confirmButtonText: 'Entendido!'
         });
