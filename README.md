@@ -1,4 +1,5 @@
-# Em desenvolvimento - Site Portfólio Pessoal de Aleksander Romero
+## Em desenvolvimento...
+# Site Portfólio Pessoal de Aleksander Romero
 
 ## Visão Geral
 
@@ -33,4 +34,3 @@ O projeto está organizado da seguinte forma:
 - GitHub: [AleksanderRomero](https://github.com/AleksanderRomero)
 
 Sinta-se à vontade para entrar em contato comigo caso tenha alguma pergunta, feedback ou oportunidade de colaboração!
-# portfolio-meu-site
