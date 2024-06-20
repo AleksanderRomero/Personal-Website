@@ -1,5 +1,5 @@
 ## Em desenvolvimento...
-# Site Portfólio Pessoal de Aleksander Romero
+# Website Pessoal de Aleksander Romero
 
 ## Visão Geral
 
